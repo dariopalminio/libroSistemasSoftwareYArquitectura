@@ -7,17 +7,20 @@ Texto del Modelado de Sistemas
 \section{Modelado}
 \section{Herramientas conceptuales de modelado}
 
+\subsection{Herramientas conceptuales de Diagramado}
 \begin{table}[h]
 \centering
 \caption{Herramientas conceptuales de Diagramado}
-\label{my-label}
+\label{Herramientas-conceptuales-de-Diagramado}
 \begin{tabular}{|l|l|}
 \hline
-Acrónimo & Detalle                                       \\ \hline
+Acrónimo & Significado en inglés                         \\ \hline
 ADL      & Architecture Description Language             \\ \hline
 BPMN     & Business Process Modeling Notation            \\ \hline
-CD       & Conceptual Diagram                            \\ \hline
+CD       & Conceptual Diagram or ConceptDraw             \\ \hline
 CLD      & Causal Loop Diagram                           \\ \hline
+ERD      & Entity Relationship Diagram                   \\ \hline
+FC       & Flow Charts (for control flow)                \\ \hline
 DFD      & Data Flow Diagram                             \\ \hline
 MMD      & Map Mind Diagram                              \\ \hline
 SC       & Structure Chart                               \\ \hline
@@ -26,6 +29,48 @@ SSADM    & Structured Systems Analysis and Design Method \\ \hline
 UML      & Unified Modeling Language                     \\ \hline
 \end{tabular}
 \end{table}
+
+\subsubsection{ADL}
+\subsubsection{BPMN}
+\subsubsection{CD}
+\subsubsection{CLD}
+\subsubsection{ERD}
+\subsubsection{FC}
+El Diagrama de Flujo (Flow Charts) es usado para diagramar flujos de control.
+
+\subsubsection{DFD}
+El Diagrama de Flujo de Datos o DFD fue introducido y popularizado en 1970 para el análisis y diseño estructurado \cite{Gane-Sarson-1979} para diagramar procesos de sistemas. Un DFD muestran el flujo de datos dentro del sistema desde entidades externas, mostrando como los datos fluyen entre diferentes procesos y qué almacenes intervienen para que los datos sean guardados y recuperados \cite{Scott-Ambler-2004}. 
+Para este tipo de diagramas hay dos estándares de notaciones: la notación DeMarco-Yourdon (DeMarco, Yourdon y Constantine 1979 \cite{Dixit-2007}) y la notación Gane-Sarson.
+%ver http://www.agilemodeling.com/artifacts/dataFlowDiagram.htm
+
+En este tipo de diagramas hay solo cuatro elementos \cite{Dixit-2007}:
+\begin{itemize}
+\item Entidades externas: son fuentes esternas. En ambas notaciones se representa con cuadrados.
+\item Procesos: son los subsistemas o procesos del sistema. En notación Gane-Sarson se representa con rectángulos redondeados y según DeMarco-Yourdon con círculos o elipses.  
+\item Flujo de datos: flujo de datos electrónicos o físicos. En ambas notaciones se representa con flechas.
+\item Almacenes: almacenes de información representadas. En notación Gane-Sarson se representa con rectángulos abiertos y según DeMarco-Yourdon con rectangulos sin líneas laterales.
+\end{itemize}
+
+\begin{figure}[h]
+  \includegraphics{DFDGaneSarsonNotation}
+  \caption{DFD Notación Gane-Sarson}
+  \centering
+  \label{fig:DFDGaneSarsonNotation} %\ref{fig:DFDGaneSarsonNotation}
+\end{figure}
+
+\begin{figure}[h]
+  \includegraphics{DFDDeMarcoYourdonNotation}
+  \caption{DFD Notación DeMarcoYourdon}
+  \centering
+  \label{fig:DFDDeMarcoYourdonNotation} %\ref{fig:DFDDeMarcoYourdonNotation}
+\end{figure}
+
+
+\subsubsection{MMD}
+\subsubsection{SC}
+\subsubsection{SFD}
+\subsubsection{SSADM}
+\subsubsection{UML}
 
 \section{Modelos de un sistema general}
 \section{Sistema general de modelado}
