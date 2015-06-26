@@ -2,16 +2,27 @@
 
 \chapter{Modelado de Sistemas}
 
-El Modelado de Sistemas es una actividad esencial de Ingeniería de Sistemas y de cualquier pensador sistémico. Pues, se hacen modelos como simplificación abstracta de la realidad \cite{Meadows-2009} que forma una representación del sistema real \cite{Fiuba-2005} o sistema origen a estudiar.
+El Modelado de Sistemas es una actividad esencial de Ingeniería de Sistemas y de cualquier pensador sistémico. Pues, se hacen modelos como simplificación abstracta de la realidad \cite{Meadows-2009} que forma una representación del sistema real \cite{Fiuba-2005} o sistema origen a estudiar o sistema a diseñar.
 
 \section{Sistema de modelado}
 
-Para entender la realidad se hace necesario percibirla y modelarla de algún modo. En este proceso existe un orden real de las cosas y un orden percibido y reflejado en un modelo hecho por alguien, un observador. Como dice Capra “toda la percepción de un modelo es, de alguna manera, la percepción de algún orden” \cite{Fritjof-Capra-1975} y la percepción de un orden es hecha por alguien. Un principio cibérnetico dice que todo fenómeno observado es observado por alguien (Heinz Von Foerster, 1979) que en otras palabras quiere decir que “todo conocer depende de la estructura del que conoce” \cite{Maturana-1984}. Por este motivo, en el sistema de modelado existe el observador como un elemento principal del mismo. Pero, además, para que el modelo resultado tenga alguna consistencia con la realidad modelada son necesarios conocimientos científico-técnicos que nos permitan cierta fiabilidad y herramientas conceptales y físicas para realizar dicha tarea.
+Para entender la realidad se hace necesario percibirla y modelarla de algún modo. En este proceso existe un orden real de las cosas y un orden percibido y reflejado en un modelo hecho por alguien, un observador. Como dijo Capra “toda la percepción de un modelo es, de alguna manera, la percepción de algún orden” \cite{Fritjof-Capra-1975} y la percepción de un orden es hecha por alguien. Un principio cibérnetico dice que todo fenómeno observado es observado por alguien (Heinz Von Foerster, 1979) que en otras palabras quiere decir que “todo conocer depende de la estructura del que conoce” \cite{Maturana-1984}. Por este motivo, en el sistema de modelado existe el observador como un elemento principal del mismo. Pero, como interviene un observador, entonces la observación y su modelado se torna subjetiva. Para hacer que el modelo sea más objetivo y tenga alguna consistencia con la realidad modelada son necesarios conocimientos científico-técnicos que nos permitan cierta fiabilidad y herramientas conceptuales y físicas para realizar dicha tarea bajo cierta estandarización. Para ello existen herramientas conceptuales de modelado. Las ciencias formales son algunas de esas herramientas, como la matemática y la lógica.
 
 \section{Herramientas conceptuales de modelado}
 
 \subsection{Herramientas conceptuales de Diagramado}
 
+
+Hay diferentes maneras de plasmar un modelo fuera de nuestras mentes y la gráfica o la diagramación es una de las más usadas en la disciplina Arquitectura. La diagramación es una herramienta metodológica fundamental del proceder empírico en el diseño de sistemas y en arquitectura. Los diagramas habitualmente sirven para modelar la realidad con un lenguaje gráfico y su utilidad es la siguiente:
+
+\begin{itemize}
+\item \textbf{Comprención sistémica:} 
+
+\item \textbf{Comunicar ideas:} Como dijera Albert Einstein: "si no puedes explicarlo simple, no lo entiendes lo suficientemente bien"; y la diagramación sirve para hacer más simple una explicación de un sistema complejo. En este sentido sirve al trabajo cooperativo de diseño y creación y a la comunicación de los resultados del diseño. Es útil al trabajo cooperativo de diseño debido a que nos permite debatir, representar en gráficos y tener referentes concretos compartidos de los conceptos que conversamos. El principal valor de los diagramas se da en el debate, porque mientras diagramamos modelamos para mantener una conversación; pues, el valor principal es la conversación y la comprensión compartida al crear el modelo; su visualización como un diagrama fácil de ver es importante para hacer concretas y sin ambigüedades a las ideas que tenemos, los modelos mentales de las personas, porque las palabras solas pueden ser borrosas y mal entendidas \cite{Larman-Vodde-2008}. De este modo, un diagrama sistémico o arquitectónico sirve a los propósitos de Ingeniería de Sistemas y a la Arquitectura para comunicación, medio de educación.
+ 
+\item \textbf{Guía de desarrollo:}
+
+\end{itemize}
 
 \begin{table}[h]
 \centering
@@ -36,25 +47,41 @@ UML      & Unified Modeling Language                     \\ \hline
 \end{table}
 
 \subsubsection{ADL}
+
 \subsubsection{BPMN}
+
 \subsubsection{CD}
+
 \subsubsection{CLD}
+
 \subsubsection{ERD}
-\subsubsection{FC}
-El Diagrama de Flujo (Flow Charts) es usado para diagramar flujos de control.
 
-\subsubsection{DFD}
+\subsubsection{FC, Gráfico de Flujo}
 
-El Diagrama de Flujo de Datos o DFD fue introducido y popularizado en 1970 para el análisis y diseño estructurado \cite{Gane-Sarson-1979} para diagramar procesos de sistemas. Un DFD muestran el flujo de datos dentro del sistema desde entidades externas, mostrando como los datos fluyen entre diferentes procesos y qué almacenes intervienen para que los datos sean guardados y recuperados \cite{Scott-Ambler-2004}. 
+El Diagrama de Flujo o Gráfico de flujo (FC o "Flow Charts") es usado para diagramar flujos de control.
+
+\subsubsection{DFD, Diagrama de Flujo de Datos}
+
+El Diagrama de Flujo de Datos o DFD fue introducido y popularizado en 1970 para el análisis y diseño estructurado \cite{Gane-Sarson-1979} para diagramar procesos de sistemas. Un DFD muestra el flujo de datos dentro del sistema desde entidades externas, mostrando cómo los datos fluyen entre diferentes procesos y qué almacenes intervienen para que los datos sean guardados y recuperados \cite{Scott-Ambler-2004}. Los modelos DFD muestran una perspectiva funcional de un sistema donde cada transformación o proceso representa una función que el sistema hace en su procesamiento de entradas en salidas \cite{Sommerville-2006}.\newline
 Para este tipo de diagramas hay dos estándares de notaciones: la notación DeMarco-Yourdon (DeMarco, Yourdon y Constantine 1979 \cite{Dixit-2007}) y la notación Gane-Sarson.\newline
 \newline
+
 En este tipo de diagramas hay solo cuatro elementos \cite{Dixit-2007}:
 \begin{itemize}
-\item \textbf{Entidad externa:} son fuentes externas. En ambas notaciones se representa con cuadrados.
-\item \textbf{Proceso:} son los subsistemas o procesos del sistema. En notación Gane-Sarson se representa con rectángulos redondeados y según DeMarco-Yourdon con círculos o elipses.  
-\item \textbf{Flujo de dato:} flujo de datos electrónicos o físicos. En ambas notaciones se representa con flechas.
-\item \textbf{Almacen:} almacen de información. En notación Gane-Sarson se representa con rectángulos abiertos y según DeMarco-Yourdon con rectangulos sin líneas laterales. Por practicidad se puede implementar con un rectángulo con algún distintivo, siempre cuando se aclare que la notación representa un almacen de datos.
+\item \textbf{Entidad externa:} las entidades externas son fuentes de recursos de datos externos al sistema, aunque también podrían ser de materia, energía o información. Se los suele identificar con sustantivos que son el nombre de la entidad. Por ejemplo un proveedor del sistema, un cliente, etcétera.
+
+\item \textbf{Proceso:} son los subsistemas o procesos del sistema. Un proceso es como una caja negra cuya estructura interna no se muestra y que posee entradas y salidas, considerándose a las mismas como flujos. Un proceso es una actividad de procesamiento de datos, pero también podría serlo de materia, energía o información. Un proceso también puede verse como un sistema o subsistema componente de otro, ya que es una estructura funcionando en el tiempo. En Teoría General de Sistemas se tiene una persepción dinámica de la realidad, donde los sistemas son considerados procesos \cite{Sarabia-1995}. A los procesos se los suele identificar con nombres descriptivos que son verbos, verbos en infinitivo, verbos con sufijo "-ción/-sión" o nombre de actividad que se asocia a una acción o proceso.
+
+\item \textbf{Flujo de dato:} también están los flujos de datos electrónicos o físicos. Un flujo es un fenómeno identificable por el cual se reconoce la interacción entre procesos como transferencia, transacción o suceso. Los flujos son las relaciones en un sistema. Habitualmente se asocia al flujo con transferencia de datos, pero también puede ser de materia o energía. Se los suele identificar con sustantivos que son el nombre del objeto o suceso que es transferido en el flujo.
+
+\item \textbf{Almacen:} un almacen es una entidad para guardar y recuperar información, materia o energía. Esta entidad es un componente de almacenamiento del sistema. Se los suele identificar con sustantivos que son el nombre de la entidad de almacenado o almecen de los objetos del flujo. Por ejemplo un almacén puede ser un depósito, una librería, etcétera.
+
 \end{itemize}
+
+\textbf{DFD con notación Gane-Sarson}
+
+En notación Gane-Sarson las entidades externas se representan con rectángulos o cuadrados, los procesos se representa con rectángulos redondeados, los flujos con flechas y los almacenes con rectángulos abiertos. A continuación se puede ver un ejemplo (ver figura \ref{fig:DFDGaneSarsonNotation}):\newline
+\newline
 
 \begin{figure}[h]
   \centering
@@ -64,19 +91,28 @@ En este tipo de diagramas hay solo cuatro elementos \cite{Dixit-2007}:
   \label{fig:DFDGaneSarsonNotation} %\ref{fig:DFDGaneSarsonNotation}
 \end{figure}
 
+\textbf{Ejemplo de DFD con notación DeMarco-Yourdon}
+
+En notación DeMarco-Yourdon las entidades externas se representan con rectángulos o cuadrados, los procesos se representa con círculos o elipses y los almacenes con rectángulos sin líneas laterales. Por practicidad se puede implementar con un rectángulo con algún distintivo, siempre cuando se aclare que la notación representa un almacen de datos. A continuación se puede ver un ejemplo (ver figura \ref{fig:DFDDeMarcoYourdonNotation}):\newline
+\newline
+
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.5]{DFDDeMarcoYourdonNotation}
-  \caption{DFD Notación DeMarco-Yourdon \cite{Dixit-2007}}
+  \caption{Ejemplo de DFD Notación DeMarco-Yourdon \cite{Dixit-2007}}
   \centering
   \label{fig:DFDDeMarcoYourdonNotation} %\ref{fig:DFDDeMarcoYourdonNotation}
 \end{figure}
 
 
 \subsubsection{MMD}
+
 \subsubsection{SC}
+
 \subsubsection{SFD}
+
 \subsubsection{SSADM}
+
 \subsubsection{UML}
 
 \section{Modelos de un sistema general}
