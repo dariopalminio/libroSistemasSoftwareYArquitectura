@@ -2,7 +2,7 @@
 
 \chapter{Modelado de Sistemas}
 
-El Modelado de Sistemas es una actividad esencial de Ingeniería de Sistemas y de cualquier pensador sistémico. Pues, se hacen modelos como simplificación abstracta de la realidad \cite{Meadows-2009} que forma una representación del sistema real \cite{Fiuba-2005} o sistema origen a estudiar o sistema a diseñar.
+El Modelado de Sistemas es una actividad esencial de Ingeniería de Sistemas, de sistemistas y de cualquier pensador sistémico. Pues, se hacen modelos como simplificación abstracta de la realidad \cite{Meadows-2009} que forma una representación del sistema real \cite{Fiuba-2005} o sistema origen a estudiar o sistema a diseñar.
 
 \section{Sistema de modelado}
 
@@ -20,9 +20,11 @@ Hay que tener en cuenta que este proceso es dinámico y mientras se desarrolla e
 
 \section{Herramientas conceptuales de modelado}
 
+Hay diferentes maneras de plasmar un modelo fuera de nuestras mentes. Entre las más usadas estan la representación gráfica con diagramación, la modelización matemática y la modelización informática. Estas maneras son herramientas usadas por un sistemista para poder modelar. Las herramientas conceptuales de modelado sirven, entre otras cosas, para construir modelos de caja negra sin los detalles atinentes a la composición material de los sistemas concretos modelados \cite{Bunge-1979}. La teoría sistémica SGT sirve como principal herramienta conceptual que brinda las teorías, conceptos y formas de enfoque para poder analizar la porsión de mundo a modelar por el sistemista modelizador. Si bien todo el conocimiento científico funciona como herramienta conceptual, al sistemista generalmente no le interesa incorporar leyes específicas de las ciencias de nivel inferior de realidad (como la física y la química) sino, más bien, le interesa aplicar leyes generales transversales a diferentes disciplinas. Por este motivo la teoría sistémica sirve a este propósito, como herramienta generalista para el trabajo multidisciplanrio de analisis sistémico.
+
 \subsection{Herramientas conceptuales de Diagramado}
 
-Hay diferentes maneras de plasmar un modelo fuera de nuestras mentes y la gráfica o la diagramación es una de las más usadas en Sistemas. La diagramación es una herramienta metodológica fundamental del proceder empírico en estudio y diseño de sistemas y arquitecturas. Los diagramas habitualmente sirven para modelar la realidad con un lenguaje simbólico gráfico y su utilidad es la siguiente:
+La gráfica o la diagramación es una de las herramientas más usadas en análisis de sistemas. La diagramación es una herramienta metodológica fundamental del proceder empírico en estudio y diseño de sistemas y arquitecturas. Los diagramas habitualmente sirven para modelar la realidad con un lenguaje simbólico gráfico y su utilidad es la siguiente:
 
 \begin{itemize}
 
@@ -45,6 +47,7 @@ A continuación se listan las herramientas principales más conocidas:
 \begin{tabular}{|l|l|}
 \hline
 Acrónimo & Significado en inglés                         \\ \hline
+Graph    & Graph Diagram                                 \\ \hline
 ADL      & Architecture Description Language             \\ \hline
 BPMN     & Business Process Modeling Notation            \\ \hline
 CD       & Conceptual Diagram or ConceptDraw             \\ \hline
@@ -60,13 +63,35 @@ UML      & Unified Modeling Language                     \\ \hline
 \end{tabular}
 \end{table}
 
+\subsubsection{Graph, Diagrama de Grafos}
+
+Un grafo es un conjunto de objetos llamados nodos (vértices) unidos por enlaces llamados aristas (arcos). Un grafo es la manera más simple de representar un sistema en forma gráfica ya que los nodos pueden representar a los componentes del sistema y las aristas a las relaciones entre los componentes. El diagrama de grafos es la base de muchos otros diagramas como: diagramas conceptuales, grafos Pert y diagramas de Gantt.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.5]{GraphModelBasic}
+  \caption{Ejemplo de Diagrama de Grafos simple}
+  \centering
+  \label{fig:GraphModelBasic} %\ref{fig:GraphModelBasic}
+\end{figure}
+
+
 \subsubsection{ADL}
 
 \subsubsection{BPMN}
 
 \subsubsection{CD}
 
-\subsubsection{CLD}
+\subsubsection{CLD, Diagrama de Lazos Causales}
+El Diagrama de Lazos Causales, CLD o Causal Loop Diagram...
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.5]{CausalLoopDiagramWolvesAndRabbitsExample}
+  \caption{Ejemplo de un Diagrama de Lazos Causales}
+  \centering
+  \label{fig:v} %\ref{fig:CausalLoopDiagramWolvesAndRabbitsExample}
+\end{figure}
 
 \subsubsection{ERD}
 
