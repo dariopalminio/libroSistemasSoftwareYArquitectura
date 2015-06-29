@@ -2,7 +2,7 @@
 
 \chapter{Modelado de Sistemas}
 
-El Modelado de Sistemas es una actividad esencial de Ingeniería de Sistemas, de sistemistas y de cualquier pensador sistémico. Pues, se hacen modelos como simplificación abstracta de la realidad \cite{Meadows-2009} que forma una representación del sistema real \cite{Fiuba-2005} o sistema origen a estudiar o sistema a diseñar.
+El Modelado de Sistemas es una actividad esencial de Ingeniería de Sistemas, de sistemistas y de cualquier pensador sistémico. Pues, se hacen modelos de sistemas como simplificación abstracta de la realidad \cite{Meadows-2009} que forma una representación del sistema real \cite{Fiuba-2005} o sistema origen a estudiar o sistema a diseñar. Así como la ciencia busca una representación lo más verdadera posible de la realidad, cuando modelamos tratamos de buscar lo mismo, una mayor correspondencia del modelo con lo que consideramos real.
 
 \section{Sistema de modelado}
 
@@ -47,7 +47,7 @@ A continuación se listan las herramientas principales más conocidas:
 \begin{tabular}{|l|l|}
 \hline
 Acrónimo & Significado en inglés                         \\ \hline
-Graph    & Graph Diagram                                 \\ \hline
+Digraph  & Directed graph/Graph Diagram                  \\ \hline
 ADL      & Architecture Description Language             \\ \hline
 BPMN     & Business Process Modeling Notation            \\ \hline
 CD       & Conceptual Diagram or ConceptDraw             \\ \hline
@@ -55,7 +55,7 @@ CLD      & Causal Loop Diagram                           \\ \hline
 ERD      & Entity Relationship Diagram                   \\ \hline
 FC       & Flow Charts (for control flow)                \\ \hline
 DFD      & Data Flow Diagram                             \\ \hline
-MMD      & Map Mind Diagram                              \\ \hline
+MMD      & Mind Mapping Diagram                          \\ \hline
 SC       & Structure Chart                               \\ \hline
 SFD      & Stock and Flow Diagrams                       \\ \hline
 SSADM    & Structured Systems Analysis and Design Method \\ \hline
@@ -63,17 +63,23 @@ UML      & Unified Modeling Language                     \\ \hline
 \end{tabular}
 \end{table}
 
-\subsubsection{Graph, Diagrama de Grafos}
+\subsubsection{Diagrama de Grafos o Digraph}
 
-Un grafo es un conjunto de objetos llamados nodos (vértices) unidos por enlaces llamados aristas (arcos). Un grafo es la manera más simple de representar un sistema en forma gráfica ya que los nodos pueden representar a los componentes del sistema y las aristas a las relaciones entre los componentes. El diagrama de grafos es la base de muchos otros diagramas como: diagramas conceptuales, grafos Pert y diagramas de Gantt.
+Un Digraph o Grafo dirigido (directed graph) es un diagrama de grafos. Un grafo es un conjunto de objetos llamados nodos (vértices) unidos por enlaces llamados aristas (arcos). Un grafo es la manera más simple de representar un sistema en forma gráfica, ya que los nodos pueden representar a los componentes del sistema y las aristas a las relaciones entre los componentes o sea al acoplamiento entre componentes. Las aristas flechas representan una acción de estimulación de origen a destino, o sea a un acoplamiento negativo, y las flechas tachadas una acción de inhibición, o sea a un acoplamiento positivo.
+
+A continuación podemos ver un ejemplo de este tipo de diagramas:
 
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.5]{GraphModelBasic}
-  \caption{Ejemplo de Diagrama de Grafos simple}
+  \caption{Ejemplo de Diagrama de Grafos}
   \centering
   \label{fig:GraphModelBasic} %\ref{fig:GraphModelBasic}
 \end{figure}
+
+El ejemplo es una representación de grafos de un sistema predador-presa compuesto por una población de lobos (nodo a) y una población de conejos (nodo b). El gráfico muestra que el crecimiento de la población de lobos acciona negativamente en la población de conejos haciendo disminuirla y también lo hace negativamente disminuyendo ella misma. Por otro lado, la población de conejos acciona positivamente sobre sí misma aumentando en cantidad y sobre los lobos aumentando la población de lobos.
+
+El diagrama de grafos es la base de muchos otros diagramas como: diagrama de bloques (block diagrams), flujo de grafo (Flow graph), diagramas conceptuales, grafos Pert, diagramas de Gantt, etcétera.
 
 
 \subsubsection{ADL}
@@ -82,8 +88,11 @@ Un grafo es un conjunto de objetos llamados nodos (vértices) unidos por enlaces
 
 \subsubsection{CD}
 
-\subsubsection{CLD, Diagrama de Lazos Causales}
-El Diagrama de Lazos Causales, CLD o Causal Loop Diagram...
+\subsubsection{Diagrama de Lazos Causales o CLD}
+
+Los diagramas causales, Diagramas de Lazos Causales (CLD o Causal Loop Diagram) son una herramienta útil en cibernética y dinámica de sistemas para modelar hipótesis dinámicas, es decir el comportamiento de influencias causales entre componentes de un sistema o variables componentes de un sistema dado. En otras palabras, es útil para modelar estructuras de sistemas y patrones sistémicos de comportamientos \cite{Craig-Kirkwood-1998}. El uso formal de CLD fue iniciado por el Dr. Dennis Meadows \cite{Meadows-1974} y fue bastante popularizado por Peter Senge \cite{Peter-Senge-1990}. En estos gráficos, las aristas flechas representan una influencia de relación directa entre dos variables. Por ejemplo, una flecha positiva de A a B indica que un aumento de A corresponde un aumento de B (relación positiva). En cambio, una flecha negativa de A a B indica que un aumento de A corresponde una disminución de B (relación negativa).
+
+A continuación podemos ver un ejemplo de este tipo de diagramas:
 
 \begin{figure}[h]
   \centering
@@ -93,13 +102,15 @@ El Diagrama de Lazos Causales, CLD o Causal Loop Diagram...
   \label{fig:v} %\ref{fig:CausalLoopDiagramWolvesAndRabbitsExample}
 \end{figure}
 
+El ejemplo es una representación de un sistema predador-presa compuesto por una población de lobos (Wolves) y una población de conejos (Rabbits). El gráfico muestra que la variable de la población de lobos influencia en relación inversa a la variable de la población de conejos haciendo que cuando crece disminuya la de conejos y también lo hace influenciándose a sí misma. Por otro lado, la variable de la población de conejos influencia en forma proporcional directa sobre sí misma aumentando en cantidad y sobre la variable de lobos haciendo que aumente.
+
 \subsubsection{ERD}
 
-\subsubsection{FC, Gráfico de Flujo}
+\subsubsection{Gráfico de Flujo o FC}
 
 El Diagrama de Flujo o Gráfico de flujo (FC o "Flow Charts") es usado para diagramar flujos de control.
 
-\subsubsection{DFD, Diagrama de Flujo de Datos}
+\subsubsection{Diagrama de Flujo de Datos o DFD}
 
 El Diagrama de Flujo de Datos o DFD fue introducido y popularizado en 1970 para el análisis y diseño estructurado \cite{Gane-Sarson-1979} para diagramar procesos de sistemas. Un DFD muestra el flujo de datos dentro del sistema desde entidades externas, mostrando cómo los datos fluyen entre diferentes procesos y qué almacenes intervienen para que los datos sean guardados y recuperados \cite{Scott-Ambler-2004}. Los modelos DFD muestran una perspectiva funcional de un sistema donde cada transformación o proceso representa una función que el sistema hace en su procesamiento de entradas en salidas \cite{Sommerville-2006}.\newline
 Para este tipo de diagramas hay dos estándares de notaciones: la notación DeMarco-Yourdon (DeMarco, Yourdon y Constantine 1979 \cite{Dixit-2007}) y la notación Gane-Sarson.\newline
@@ -144,7 +155,9 @@ En notación DeMarco-Yourdon las entidades externas se representan con rectángu
 \end{figure}
 
 
-\subsubsection{MMD}
+\subsubsection{Mapa mental o MMD}
+
+El mapa mental o Mind Mapping es una técnica, inventada por el británico Tony Buzan \cite{Tony-Buzan-2004}. Un mapa mental consta de una palabra central o concepto que representa el tronco de una estructura de datos arbolada. En torno a la palabra central se dibujan de 5 a 10 ideas principales que referidas a aquella palabra. Entonces, a partir de cada una de las palabras derivadas, se dibujan a su vez de 5 a 10 ideas principales que se refieren a cada una de esas palabras ramas.
 
 \subsubsection{SC}
 
